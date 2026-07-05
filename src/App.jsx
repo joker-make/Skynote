@@ -1328,6 +1328,7 @@ function SkyScene({ compact = false, rich = false, temperature, weather, weather
   const catImages = moodOptions.map((item) => item.catImage);
   const decorCount = compact ? 7 : 18;
   const charmCount = compact ? 3 : 9;
+  const fillCount = compact ? 5 : 22;
 
   return (
     <div
@@ -1371,6 +1372,18 @@ function SkyScene({ compact = false, rich = false, temperature, weather, weather
       <div className="sky-sparkles">
         {Array.from({ length: decorCount }, (_, index) => (
           <span key={index} style={{ '--i': index, '--x': `${(index * 17) % 96}%`, '--y': `${8 + ((index * 19) % 58)}%` }} />
+        ))}
+      </div>
+      <div className="sky-weather-fill">
+        {Array.from({ length: fillCount }, (_, index) => (
+          <span
+            key={index}
+            style={{
+              '--i': index,
+              '--x': `${4 + ((index * 19) % 90)}%`,
+              '--y': `${18 + ((index * 23) % 58)}%`,
+            }}
+          />
         ))}
       </div>
       {weather === 'rainy' && (
