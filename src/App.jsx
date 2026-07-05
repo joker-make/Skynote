@@ -1127,7 +1127,6 @@ function TodayView({
   onWeatherLevelChange,
   onWeatherSourceChange,
 }) {
-  const metricText = formatWeatherMetrics(weather, selectedWeather.metrics);
   const weatherSourceText = weatherSource === 'auto' ? '自动天气' : '手动天气';
 
   return (
@@ -1149,7 +1148,6 @@ function TodayView({
             <div>
               <strong>{selectedWeather.label} · {selectedWeather.profile.label}</strong>
               <p>{weatherSourceText}</p>
-              {metricText && <p>{metricText}</p>}
             </div>
           </div>
         </div>
@@ -1363,6 +1361,11 @@ function SkyScene({ compact = false, rich = false, temperature, weather, weather
           <i />
           <b />
         </span>
+      </div>
+      <div className="sky-weather-emblem">
+        <span />
+        <span />
+        <span />
       </div>
       <div className="sky-charms">
         {Array.from({ length: charmCount }, (_, index) => (
