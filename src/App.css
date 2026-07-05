@@ -853,6 +853,56 @@ h2 {
   height: 27px;
 }
 
+.sky-rainy .sky-cloud {
+  background:
+    radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.58), transparent 22%),
+    linear-gradient(180deg, rgba(249, 251, 244, 0.98), rgba(218, 234, 235, 0.96));
+  box-shadow:
+    inset 0 -10px 0 rgba(131, 184, 201, 0.22),
+    0 14px 22px rgba(89, 126, 138, 0.1);
+}
+
+.sky-rainy .sky-cloud::before,
+.sky-rainy .sky-cloud::after {
+  background:
+    radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.62), transparent 25%),
+    linear-gradient(180deg, rgba(249, 251, 244, 0.98), rgba(218, 234, 235, 0.96));
+}
+
+.sky-rainy .sky-cloud.cloud-a::after,
+.sky-rainy .sky-cloud.cloud-b::after,
+.sky-rainy .sky-cloud.cloud-c::after {
+  box-shadow:
+    -18px 22px 0 -17px rgba(174, 220, 233, 0.68),
+    4px 28px 0 -18px rgba(174, 220, 233, 0.54),
+    20px 22px 0 -17px rgba(174, 220, 233, 0.62);
+}
+
+.sky-snowy .sky-cloud {
+  background:
+    radial-gradient(circle at 28% 26%, rgba(255, 255, 255, 0.9), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(235, 244, 246, 0.96));
+  box-shadow:
+    inset 0 -10px 0 rgba(210, 226, 232, 0.28),
+    0 14px 22px rgba(116, 146, 158, 0.08);
+}
+
+.sky-snowy .sky-cloud::before,
+.sky-snowy .sky-cloud::after {
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255, 255, 255, 0.92), transparent 25%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(235, 244, 246, 0.96));
+}
+
+.sky-snowy .sky-cloud.cloud-a::after,
+.sky-snowy .sky-cloud.cloud-b::after,
+.sky-snowy .sky-cloud.cloud-c::after {
+  box-shadow:
+    -18px 22px 0 -16px rgba(255, 255, 255, 0.88),
+    2px 29px 0 -17px rgba(255, 255, 255, 0.78),
+    20px 23px 0 -16px rgba(255, 255, 255, 0.84);
+}
+
 .cloud-face {
   z-index: 1;
 }
@@ -1053,7 +1103,7 @@ h2 {
   content: "";
   border-radius: 999px;
   opacity: 0.76;
-  animation: cloudReleasePulse 2.4s ease-in-out infinite;
+  animation: cloudReleasePulse 4.6s ease-in-out infinite;
 }
 
 .sky-rain::before,
@@ -1108,13 +1158,13 @@ h2 {
     0 4px 8px rgba(103, 153, 171, 0.08);
   transform: rotate(18deg);
   opacity: 0;
-  animation: rainFall 1.42s cubic-bezier(0.36, 0.02, 0.62, 0.96) infinite;
+  animation: rainFall 2.85s cubic-bezier(0.38, 0.04, 0.56, 0.98) infinite;
 }
 
 .sky-level-2 .sky-rain span {
   width: 15px;
   height: 21px;
-  animation-duration: 1.04s;
+  animation-duration: 2.25s;
 }
 
 .sky-rain i {
@@ -1151,7 +1201,7 @@ h2 {
     inset 0 -3px 0 rgba(191, 214, 226, 0.22),
     0 0 0 4px rgba(255, 255, 255, 0.24);
   opacity: 0;
-  animation: snowFall 4.2s linear infinite;
+  animation: snowFall 7.8s ease-in-out infinite;
 }
 
 .sky-snow span::before,
@@ -1186,7 +1236,7 @@ h2 {
 .sky-level-2 .sky-snow span {
   width: 23px;
   height: 23px;
-  animation-duration: 3.1s;
+  animation-duration: 6.2s;
 }
 
 .sky-fog,
@@ -1573,13 +1623,13 @@ h2 {
     opacity: 0;
     transform: translate(0, 0) rotate(18deg) scale(0.72);
   }
-  12% {
-    opacity: 1;
-    transform: translate(calc(var(--drift) * 0.12), 8px) rotate(18deg) scale(1);
+  18% {
+    opacity: 0.78;
+    transform: translate(calc(var(--drift) * 0.12), 10px) rotate(18deg) scale(1);
   }
-  86% {
-    opacity: 1;
-    transform: translate(calc(var(--drift) * 0.72), calc(var(--fall) * 0.82)) rotate(18deg) scale(1);
+  72% {
+    opacity: 0.74;
+    transform: translate(calc(var(--drift) * 0.62), calc(var(--fall) * 0.72)) rotate(18deg) scale(0.98);
   }
   100% {
     opacity: 0;
@@ -1592,13 +1642,13 @@ h2 {
     opacity: 0;
     transform: translate(0, 0) rotate(0deg) scale(0.68);
   }
-  14% {
-    opacity: 1;
-    transform: translate(calc(var(--drift) * 0.18), 10px) rotate(18deg) scale(1);
+  20% {
+    opacity: 0.86;
+    transform: translate(calc(var(--drift) * 0.18), 12px) rotate(18deg) scale(1);
   }
-  82% {
-    opacity: 1;
-    transform: translate(calc(var(--drift) * 0.78), calc(var(--fall) * 0.84)) rotate(150deg) scale(1);
+  78% {
+    opacity: 0.84;
+    transform: translate(calc(var(--drift) * 0.74), calc(var(--fall) * 0.78)) rotate(130deg) scale(0.98);
   }
   100% {
     opacity: 0;
