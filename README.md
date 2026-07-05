@@ -2,6 +2,10 @@
 
 心情 + 天气 + 私人短记手机 App 原型，当前重点是完善本地记录功能。
 
+## 下载 APK
+
+安卓测试包：[`release/skynote-debug.apk`](https://github.com/joker-make/Skynote/raw/main/release/skynote-debug.apk)
+
 ## 本地运行
 
 ```bash
