@@ -1,0 +1,17 @@
+node_modules/
+dist/
+release/
+android-sdk/
+artifacts/
+.tmp/
+
+*.log
+*.local
+.env
+.env.*
+
+android/.gradle/
+android/.kotlin/
+android/local.properties
+android/app/build/
+android/build/

@@ -1,0 +1,19 @@
+{
+  "name": "Skynote 心情天气记事本",
+  "short_name": "Skynote",
+  "description": "记录每天的心情、天气和私人短记。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7fbf7",
+  "theme_color": "#f7fbf7",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

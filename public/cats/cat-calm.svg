@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">Calm mood cat</title>
+  <desc id="desc">A calm cat curled in a blanket with a cloud.</desc>
+  <rect width="220" height="220" rx="42" fill="#fff7df"/>
+  <path d="M37 72c11-18 34-17 44-2 13-17 40-14 49 6 18-1 31 11 31 27 0 17-14 29-34 29H57c-21 0-36-13-36-31 0-14 6-24 16-29Z" fill="#ffffff" opacity=".86"/>
+  <path d="M51 159c0-41 32-75 72-75 34 0 61 24 67 57 24 6 20 43-8 43H67c-11 0-16-10-16-25Z" fill="#eecb8a" stroke="#76502b" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M90 92l19-34 19 34M144 101l24-27 4 45" fill="#f8dca6" stroke="#76502b" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M100 122c7 7 16 7 23 0M135 122c7 7 16 7 23 0" fill="none" stroke="#52341f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M126 134c4 4 9 4 13 0M132 138c-4 7-10 11-19 11M132 138c4 7 10 11 19 11" fill="none" stroke="#52341f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M60 159c28-15 80-17 123 4" fill="none" stroke="#fff0cd" stroke-width="12" stroke-linecap="round" opacity=".9"/>
+  <path d="M54 174c36 16 88 17 133 0" fill="none" stroke="#d99d56" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+</svg>
